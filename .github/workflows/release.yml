@@ -27,6 +27,9 @@ jobs:
           curl -fsSLo porter "https://cdn.porter.sh/v1.0.0-rc.3/porter-linux-amd64"
           chmod +x porter
 
+      - name: Test
+        run: make test
+
       - name: GoReleaser Action
         if: ${{ !startsWith(github.ref, 'refs/tags/feed') }}
         uses: goreleaser/goreleaser-action@v2.0.2
