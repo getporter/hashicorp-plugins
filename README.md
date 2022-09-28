@@ -8,7 +8,7 @@ We only support the [KV Version 2][kv-v2] secret engine. Please raise an issue i
 #### Install:
 
 ```
-porter plugin install hashicorp --feed-url https://github.com/dev-drprasad/porter-hashicorp-plugins/releases/download/feed/atom.xml
+porter plugin install hashicorp --version v1.0.0-rc.1 --url https://github.com/getporter/hashicorp-plugins/releases/download
 ```
 
 #### Configuration:
