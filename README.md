@@ -8,7 +8,7 @@ We only support the [KV Version 2][kv-v2] secret engine. Please raise an issue i
 #### Install:
 
 ```
-porter plugin install hashicorp --version v1.0.0-rc.1 --url https://github.com/getporter/hashicorp-plugins/releases/download
+porter plugin install hashicorp --version v1.0.0 --url https://github.com/getporter/hashicorp-plugins/releases/download
 ```
 
 #### Configuration:
@@ -57,6 +57,6 @@ parameters:
 The secret value can use sub-paths to further select the correct secret.
 In the example above, the mysql-connection-string parameter resolves to the secret at PATH_PREFIX/myapp/v1/connstr.
 
-[porter]: https://porter.sh/
+[porter]: https://getporter.org/
 [vault]: https://www.vaultproject.io/
 [kv-v2]: https://www.vaultproject.io/api-docs/secret/kv/kv-v2
