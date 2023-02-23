@@ -23,7 +23,7 @@ jobs:
 
       - name: Install Porter
         run: |
-          curl -fsSLo porter "https://cdn.porter.sh/v1.0.1/porter-linux-amd64"
+          curl -fsSLo porter "https://cdn.porter.sh/v1.0.9/porter-linux-amd64"
           chmod +x porter
 
       - name: Test
