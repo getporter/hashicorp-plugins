@@ -1,6 +1,8 @@
 module github.com/dev-drprasad/porter-hashicorp-plugins
 
-go 1.19
+go 1.21
+
+toolchain go1.21.3
 
 replace (
 	// See https://github.com/hashicorp/go-plugin/pull/127 and
