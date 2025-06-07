@@ -33,7 +33,7 @@ jobs:
         uses: goreleaser/goreleaser-action@v2.0.2
         with:
           version: latest
-          args: release --clean --skip-validate --skip-sign --snapshot
+          args: release --clean --skip=validate,sign --snapshot
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PORTERPATH: ./porter
